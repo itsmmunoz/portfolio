@@ -26,10 +26,8 @@ import {
 export const personalInfo = {
   name: 'Maycol',
   lastName: 'Muñoz',
-  title: 'Full Stack Developer',
   role: 'Full Stack',
   mainStack: 'Laravel + Vue',
-  location: 'Colombia',
   bio: 'Desarrollador full-stack enfocado en el ecosistema TALL (Tailwind, Alpine, Laravel, Livewire), con experiencia creando paneles de administración, SaaS y APIs REST. Colaboro en proyectos open source como Orion y traducciones de MoonShine, construyendo sistemas backend escalables e interfaces modernas y de alto rendimiento.',
   avatar: 'https://github.com/maycolmunoz.png?size=200',
 }
@@ -52,7 +50,7 @@ export const categorizedStack = [
       { name: 'REACT', icon: IconBrandReact },
       { name: 'MYSQL', icon: IconBrandMysql },
       { name: 'POSTGRESQL', icon: IconDatabase },
-      { name: 'TALL STACK', icon: IconBrandVue },
+      { name: 'TALL STACK', icon: IconBrandLaravel },
     ],
   },
   {
@@ -85,7 +83,7 @@ export const categorizedStack = [
       { name: 'CLEAN ARCH', icon: IconBuildingSkyscraper },
       { name: 'MULTITENANT', icon: IconBuildingCommunity },
       { name: 'ERP & CRM', icon: IconDeviceDesktopAnalytics },
-      { name: 'PERFORMANCE', icon: IconBrandJavascript },
+      { name: 'PERFORMANCE', icon: IconDeviceDesktopAnalytics },
     ],
   },
 ]
@@ -144,6 +142,16 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    stack: ['Laravel 12', 'MoonShine', 'RBAC', 'Modular'],
+    title: 'Orion',
+    stars: 17,
+    img: 'https://github.com/maycolmunoz/orion/blob/main/_docs/image.png?raw=true',
+    description:
+      'Starter kit open source para construir paneles de administración en Laravel con MoonShine: arquitectura modular, RBAC integrado y configuración lista para usar.',
+    repository: 'https://github.com/maycolmunoz/orion',
+    link: 'https://github.com/maycolmunoz/orion',
+  },
+  {
     stack: ['Vue', 'TailwindCSS', 'Laravel', 'API'],
     title: 'Aventuro',
     stars: 6,
@@ -152,6 +160,25 @@ export const projects: Project[] = [
       'Aplicación web orientada a viajes donde los usuarios pueden explorar paquetes, gestionar reservas y acceder a su cuenta a través de una experiencia de reserva fluida y consistente.',
     repository: 'https://github.com/maycolmunoz/aventuro',
     link: 'https://youtu.be/1F4ABE5Gtbc',
+  },
+  {
+    stack: ['Laravel', 'MoonShine', 'Open Source'],
+    title: 'MoonShine Language Spanish',
+    stars: 4,
+    description:
+      'Traducción al español del panel de administración MoonShine, ampliando la accesibilidad del framework para la comunidad hispanohablante.',
+    repository: 'https://github.com/maycolmunoz/moonshine-language-spanish',
+    link: 'https://github.com/maycolmunoz/moonshine-language-spanish',
+  },
+  {
+    stack: ['Laravel', 'Moonshine'],
+    title: 'Moon Leaflet',
+    stars: 2,
+    img: 'https://github.com/maycolmunoz/moon-leaflet/blob/main/_docs/images/component.webp?raw=true',
+    description:
+      'Integra Leaflet con MoonShine para habilitar mapas interactivos, permitiendo seleccionar coordenadas o mostrar múltiples ubicaciones dentro del panel de administración.',
+    repository: 'https://github.com/maycolmunoz/moon-leaflet',
+    link: 'https://github.com/maycolmunoz/moon-leaflet',
   },
   {
     stack: [
@@ -170,44 +197,5 @@ export const projects: Project[] = [
       'Plataforma de entrega de comestibles que proporciona un catálogo limpio, navegación rápida y un flujo de pago simple para realizar pedidos a domicilio con facilidad.',
     repository: 'https://github.com/maycolmunoz/comprana',
     link: 'https://youtu.be/ZDsoQOYZTCI',
-  },
-  {
-    stack: ['Laravel', 'Moonshine'],
-    title: 'Moon Leaflet',
-    stars: 2,
-    img: 'https://github.com/maycolmunoz/moon-leaflet/blob/main/_docs/images/component.webp?raw=true',
-    description:
-      'Integra Leaflet con MoonShine para habilitar mapas interactivos, permitiendo seleccionar coordenadas o mostrar múltiples ubicaciones dentro del panel de administración.',
-    repository: 'https://github.com/maycolmunoz/moon-leaflet',
-    link: 'https://github.com/maycolmunoz/moon-leaflet',
-  },
-  {
-    stack: ['Bootstrap', 'Alpine.js', 'API'],
-    title: 'Avatarmaker',
-    stars: 0,
-    img: 'https://github.com/maycolmunoz/avatarmaker/blob/main/img/screenshot.webp?raw=true',
-    description:
-      'Permite crear y descargar avatares personalizados usando la API de Dicebear, proporcionando una interfaz simple para generar identidades visuales únicas.',
-    repository: 'https://github.com/maycolmunoz/avatarmaker',
-    link: 'https://avatarsmaker.netlify.app/',
-  },
-  {
-    stack: ['Laravel 12', 'MoonShine', 'RBAC', 'Modular'],
-    title: 'Orion',
-    stars: 17,
-    img: 'https://github.com/maycolmunoz/orion/blob/main/_docs/image.png?raw=true',
-    description:
-      'Starter kit open source para construir paneles de administración en Laravel con MoonShine: arquitectura modular, RBAC integrado y configuración lista para usar.',
-    repository: 'https://github.com/maycolmunoz/orion',
-    link: 'https://github.com/maycolmunoz/orion',
-  },
-  {
-    stack: ['Laravel', 'MoonShine', 'Open Source'],
-    title: 'MoonShine Language Spanish',
-    stars: 4,
-    description:
-      'Traducción al español del panel de administración MoonShine, ampliando la accesibilidad del framework para la comunidad hispanohablante.',
-    repository: 'https://github.com/maycolmunoz/moonshine-language-spanish',
-    link: 'https://github.com/maycolmunoz/moonshine-language-spanish',
   },
 ]

@@ -21,6 +21,8 @@ ssh-add ~/.ssh/id_ed25519_github_personal
 ssh-add ~/.ssh/id_ed25519_github_work
 ```
 
+> El agente SSH no persiste entre sesiones de terminal. Si te pide las claves de nuevo al reiniciar, agrega los comandos anteriores a tu `~/.bashrc`.
+
 ## Registrar las claves en GitHub
 
 Cada clave pública debe agregarse en la cuenta correspondiente desde **Settings → SSH and GPG keys**.
@@ -80,7 +82,3 @@ ssh -T git@github-work
 ```
 
 Si la configuración es correcta, GitHub mostrará un mensaje indicando la cuenta con la que te has autenticado.
-
-## Conclusión
-
-Mantener una clave SSH independiente para cada cuenta de GitHub permite separar entornos personales y profesionales, evitar errores de autenticación y trabajar con múltiples identidades de forma transparente desde la misma máquina.

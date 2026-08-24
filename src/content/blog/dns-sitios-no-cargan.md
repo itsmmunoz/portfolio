@@ -1,6 +1,4 @@
-## Síntomas
-
-Errores al acceder a un sitio:
+Si al intentar entrar a un sitio web tu navegador muestra alguno de estos errores, el problema está en la resolución DNS:
 
 - `DNS_PROBE_POSSIBLE`
 - `DNS_PROBE_FINISHED_NXDOMAIN`
@@ -9,7 +7,7 @@ Errores al acceder a un sitio:
 
 ## Causa
 
-Estos errores suelen estar relacionados con problemas en la resolución DNS, impidiendo que el navegador obtenga la dirección IP asociada a un dominio.
+El navegador no logra obtener la dirección IP asociada al dominio, generalmente porque el servicio DNS de la red o del proveedor de internet falla o bloquea la consulta.
 
 ## Solución recomendada
 
